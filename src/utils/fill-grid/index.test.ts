@@ -16,8 +16,8 @@ describe('fillGrid', () => {
       [0, 0, 0, 0, 0, 0, 0, 0, 0]
     ]
     fillGrid(grid)
-    for (let row in grid)
-      for (let col in grid[row]) {
+    for (const row in grid)
+      for (const col in grid[row]) {
         expect(grid[row][col]).toBeGreaterThanOrEqual(1)
         expect(grid[row][col]).toBeLessThanOrEqual(9)
       }
@@ -36,8 +36,8 @@ describe('fillGrid', () => {
       [0, 5, 0, 0, 0, 0, 0, 0, 0]
     ]
     fillGrid(grid)
-    for (let row in grid)
-      for (let col in grid[row]) {
+    for (const row in grid)
+      for (const col in grid[row]) {
         expect(grid[row][col]).toBeGreaterThanOrEqual(1)
         expect(grid[row][col]).toBeLessThanOrEqual(9)
       }

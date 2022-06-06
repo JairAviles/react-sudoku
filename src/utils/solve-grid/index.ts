@@ -18,7 +18,7 @@ const solveGrid = (grid: GRID) => {
     col = i % 9
 
     if (grid[row][col] === 0) {
-      for (let value of numbers)
+      for (const value of numbers)
         if (!isInRow({ grid, row, value }))
           if (!isInCol({ col, grid, value })) {
             const square = identifySquare({ grid, row, col })

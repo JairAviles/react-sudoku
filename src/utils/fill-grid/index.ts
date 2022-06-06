@@ -27,7 +27,7 @@ const fillGrid = (grid: GRID) => {
     if (grid[row][col] === 0) {
       shuffle(numbers)
 
-      for (let value of numbers) {
+      for (const value of numbers) {
         // is it not in grid row?
         if (!isInRow({ grid, row, value })) {
           // is it not in grid col?

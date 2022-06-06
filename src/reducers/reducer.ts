@@ -9,7 +9,7 @@ const initialState: IReducer = {}
 
 const reducer = (state = initialState, action: AnyAction): IReducer => {
   switch(action.type) {
-    case types.CREATE_GRID:
+    case types.CREATE_GRID: {
       const solvedGrid = createFullGrid()
       const gridCopy = copyGrid(solvedGrid)
       const challengeGrid = removeNumbers(gridCopy)
@@ -21,6 +21,7 @@ const reducer = (state = initialState, action: AnyAction): IReducer => {
         solvedGrid,
         workingGrid
       }
+    }
     case types.FILL_BLOCK: {
       if (state.workingGrid && state.solvedGrid) {
         if (

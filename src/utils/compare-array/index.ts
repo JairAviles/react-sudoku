@@ -4,6 +4,7 @@
  * @param arr2 second array to be compare
  * @returns true if they are equals, otherwise returns false
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const compareArrays = (arr1: any[], arr2: any[]): boolean => {
   if (!Array.isArray(arr1) && !Array.isArray(arr2)) return arr1 === arr2
   if (arr1.length !== arr2.length) return false
