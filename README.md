@@ -2,7 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Please visit my webpage to play online [https://jairaviles.com/](https://jairaviles.com/)
+Please visit my web page to play online [https://jairaviles.com/](https://jairaviles.com/)
+
+## Linter status
+
+[![GitHub Super-Linter](https://github.com/JairAviles/react-sudoku/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## Available Scripts
 
