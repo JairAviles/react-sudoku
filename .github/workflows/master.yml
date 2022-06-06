@@ -6,9 +6,15 @@ on:
     branches: [master]
     types:
       - completed
+  pull_request:
+    types:
+      - closed
 permissions:
   contents: write
 jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
   build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
