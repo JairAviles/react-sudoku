@@ -3,9 +3,12 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   workflow_run:
     workflows: [Lint Code Base]
-    branches: [ master ]
+    branches: [master]
     types:
       - completed
+  pull_request_review:
+    types:
+      - submitted
 permissions:
   contents: write
 jobs:
