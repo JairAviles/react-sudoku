@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Please visit my web page to play online [https://jairaviles.com/](https://jairaviles.com/)
+Please visit my web page to play online [https://sudoku.jairaviles.com/](https://sudoku.jairaviles.com/)
 
 ## Linter status
 
